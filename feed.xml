@@ -3,7 +3,7 @@
     <title>Docs</title>
     <link href="https://docs.loadbalancer.pro/feed.xml" rel="self" />
     <link href="https://docs.loadbalancer.pro" />
-    <updated>2023-04-09T22:20:57+01:00</updated>
+    <updated>2023-04-09T23:06:40+01:00</updated>
     <author>
         <name>Joe Robinson</name>
     </author>
@@ -16,17 +16,203 @@
         </author>
         <link href="https://docs.loadbalancer.pro/obligatory-first-post/"/>
         <id>https://docs.loadbalancer.pro/obligatory-first-post/</id>
+            <category term="Partners"/>
+            <category term="Cloudian"/>
 
-        <updated>2023-04-09T22:20:57+01:00</updated>
+        <updated>2023-04-09T23:06:40+01:00</updated>
             <summary>
                 <![CDATA[
-                    You always need one, right?
+                    At a glance HyperBalance Models Model HBL-VM** HBL-1050 HBL-1100 Throughput 8 Gbps 40 Gbps 70 Gbps HBL-VM**: Suitable for proof-of-concept systems only. Load balancers are&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>You always need one, right?</p>
+                <h3 id="at-a-glance">At a glance</h3>
+<h4 id="hyperbalance-models">HyperBalance Models</h4>
+<table>
+<thead>
+<tr>
+<th align="center">Model</th>
+<th align="center"><em><strong>HBL-VM</strong></em><sup>**</sup></th>
+<th align="center">HBL-1050</th>
+<th align="center">HBL-1100</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Throughput</td>
+<td align="center">8 Gbps</td>
+<td align="center">40 Gbps</td>
+<td align="center">70 Gbps</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><em><strong>HBL-VM</strong></em><sup>**</sup>: Suitable for proof-of-concept systems only.</p>
+</blockquote>
+<h3 id="overview">Overview</h3>
+<p>Load balancers are a core component of any IT infrastructure but they are particularly beneficial when it comes to S3 Object storage solutions. Load balancing a HyperStore Cluster provides additional resilience and redundancy. Possibly the greatest benefit of load balancing a HyperStore cluster is evening out the distribution of traffic. Sending new connections to the HyperStore nodes with the least active connections flattens the distribution of objects across the cluster.</p>
+<h3 id="considerations">Considerations</h3>
+<h4 id="throughput">Throughput</h4>
+<p>The amount of data, usually referred to as traffic, being (or capable of being) transmitted and received ‘over the network’ by a device such as a load balancer or server, per second. You may also be able to monitor the throughput of a VIP but this will always be limited by the capabilities of the device it exists on. Typically the maximum throughput of a load balancer is determined by the maximum throughput (or speed) of all of its network interfaces combined. As interface speeds get higher this rule of thumb becomes harder to achieve. Keep in mind also that protocol overheads mean that it is almost impossible ever to achieve full wire speed for a particular interface. Throughput is generally 80% of the listed maximum interface speed for a given Network Interface Card.</p>
+<p>The achievable throughput for a device can also depend on myriad other factors, including what the appliance is having to process. For example, additional packet manipulation, custom health checking, or additional processes.</p>
+<h4 id="concurrent-users">Concurrent Users</h4>
+<p>To get an understanding of the estimated load the platform will be required to support, you should first know how many users it is expected to be used by. Not only how many users will be accessing the platform but also when they will be accessing it. Are the users geographically dispersed across time zones? Will everyone be using it at the same time? Or, will there be peaks and troughs throughout the day? When you have an understanding or an expectation of how users will interact with the platform you will be able to build a picture of what kind of throughput those users will generate.</p>
+<p>Of course, not all users are people and a HyperStore cluster can be used by programs and applications. In fact, they will probably make up the majority of the load that goes through the platform. You will also need to account for events like automated backups and the load that they will generate.</p>
+<h4 id="peak-times">Peak times</h4>
+<p>How much data is moving through the network at peak times? Relying on the average network load/throughput as your benchmark will inevitably lead to problems. Sizing a solution based on peak network utilisation instead of average network utilisation is the best method. For example, restoring application servers after a failure or outage through an HBL-1100 will take around half the time it will through an HBL-1050. Not installing a right-sized HyperBalance system could mean missing the Recovery Time Objective.</p>
+<h4 id="future-expansion">Future expansion</h4>
+<p>Always factor in the likelihood that the number of users of a HyperStore cluster will scale greatly. Over and above that, you need to consider the likelihood that your HyperStore Cluster itself will scale greatly. Both these scenarios are very often the case once the business realises just how vital a HyperStore Cluster becomes for day-to-day operations.</p>
+<p><em><strong>HyperBalance is able to operate at sustained throughputs of 40 Gbps (HBL-1050) and 70 Gbps (HBL-1100). That means an HBL-1050 can read or write 18 TB/hr and 432 TB/day. The HBL-1100 can read or write 31.5 TB/hr which is 756 TB/day to a HyperStore Cluster.</strong></em></p>
+<p><em><strong>There are not any HyperStore Clusters currently deployed that are bandwidth constrained by an in-path load balancing solution. However, whilst that is currently the case, that will not necessarily always be the case. In a deployment where the sustained throughput is above the capability of the HyperBalance, the system can be deployed in SmartDNS mode.</strong></em></p>
+<p><em><strong>The standard deployment configuration uses Layer 7 Virtual Services to provide loadbalancing of the cluster. SmartDNS should only be used in extremely high throughput environments as Layer 7 Virtual Services provide much better control.</strong></em></p>
+<p><em><strong>Virtual Services running on the HyperBalance provide the ability to have extremely granular control over the system functionality. Session persistence allows the HyperBalance to always send requests to the same node or control/tune the persistence method to environment requirements. A choice of distribution algorithms, Weighted Least Connection or Weighted Round Robin. In each case you are able to adjust the node weighting to tune connection distribution.</strong></em></p>
+<p><em><strong>In summary, SmartDNS is DNS Round-Robin with health checking. In a typical DNS Round-Robin deployment, requests are sent out to the configured nodes indiscriminately. With SmartDNS the real-servers undergo simple health checks to determine their availability. If a server responds correctly it is kept within the pool of available nodes for HyperBalance to send requests to. That is currently the extent of the intelligence that SmartDNS is able to provide. It is not able to smooth traffic distribution as efficiently as Virtual Services. The benefit that SmartDNS provides is that it removes the HyperBalance from the traffic flow. This means that the throughput for the cluster is only limited by the network.</strong></em></p>
+<h5 id="at-a-glance-1">At a glance</h5>
+<p><em><strong>Virtual Service benefits:</strong></em></p>
+<ul>
+<li><em><strong>Sesson persistence</strong></em></li>
+<li><em><strong>Faster Real Server Health Checking</strong></em></li>
+<li><em><strong>Better load distribution.</strong></em></li>
+<li><em><strong>Ability to manipulate header information.</strong></em></li>
+</ul>
+<p><em><strong>SmartDNS benefits:</strong></em></p>
+<ul>
+<li><em><strong>Not bandwidth restricted.</strong></em></li>
+</ul>
+<p>This is an often-cited statistic but it bears repeating:</p>
+<blockquote>
+<p>90% percent of the world’s data was created in the last two years. And every two years, the volume of data across the world doubles in size.</p>
+</blockquote>
+<p>It is something worth keeping in mind whilst sizing not only your HyperStore Cluster but also your HyperBalance needs.</p>
+<hr id="bkmrk-">
 
+<h3 id="example-network-throughput">Example network throughput</h3>
+<h4 id="balanced-workload">Balanced workload</h4>
+<table id="bkmrk-balanced-workloadmod" style="border-collapse: collapse; width: 100%; height: 582px; border-width: 1px; border-color: rgb(0, 0, 0);" border="1"><caption>Balanced Workload</caption><colgroup><col style="width: 22%;"><col style="width: 13%;"><col style="width: 13%;"><col style="width: 13%;"><col style="width: 13%;"><col style="width: 13%;"><col style="width: 13%;"></colgroup><tbody><tr style="height: 32.6px;"><th style="height: 32.6px; vertical-align: middle; border-width: 1px; border-color: rgb(0, 0, 0);"><strong>Model</strong></th>
+<th class="align-center" style="height: 32.6px; vertical-align: middle; border-width: 1px; border-color: rgb(0, 0, 0);"><strong>TB/hr Read</strong></th>
+<th class="align-center" style="height: 32.6px; vertical-align: middle; border-width: 1px; border-color: rgb(0, 0, 0);"><strong>Gbps Read</strong></th>
+<th class="align-center" style="height: 32.6px; vertical-align: middle; border-width: 1px; border-color: rgb(0, 0, 0);"><strong>TB/hr Write</strong></th>
+<th class="align-center" style="height: 32.6px; vertical-align: middle; border-width: 1px; border-color: rgb(0, 0, 0);"><strong>Gbps Write</strong></th>
+<th class="align-center" style="height: 32.6px; vertical-align: middle; border-width: 1px; border-color: rgb(0, 0, 0);"><strong>Total TB/hr</strong></th>
+<th class="align-center" style="height: 32.6px; vertical-align: middle; border-width: 1px; border-color: rgb(0, 0, 0);"><strong>Total Gbps</strong></th>
+</tr><tr style="height: 30px;"><td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(238, 238, 238); border-color: rgb(0, 0, 0);" rowspan="2" scope="rowgroup">HBL-VM</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(238, 238, 238); border-color: rgb(0, 0, 0);">1</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(238, 238, 238); border-color: rgb(0, 0, 0);">2.22</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(238, 238, 238); border-color: rgb(0, 0, 0);">1</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(238, 238, 238); border-color: rgb(0, 0, 0);">2.22</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(238, 238, 238); border-color: rgb(0, 0, 0);">2</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(238, 238, 238); border-color: rgb(0, 0, 0);">4.44</td>
+</tr><tr style="height: 29.8px;"><td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(238, 238, 238); border-color: rgb(0, 0, 0);">2</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(238, 238, 238); border-color: rgb(0, 0, 0);">4.44</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(238, 238, 238); border-color: rgb(0, 0, 0);">2</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(238, 238, 238); border-color: rgb(0, 0, 0);">4.44</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(238, 238, 238); border-color: rgb(0, 0, 0);">4</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(238, 238, 238); border-color: rgb(0, 0, 0);">8.89</td>
+</tr><tr style="height: 30px;"><td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);" rowspan="9" scope="rowgroup">HBL-1050</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">3</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">6.67</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">3</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">6.67</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">6</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">13.33</td>
+</tr><tr style="height: 30px;"><td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">4</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">8.89</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">4</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">8.89</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">8</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">17.78</td>
+</tr><tr style="height: 30px;"><td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">5</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">11.11</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">5</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">11.11</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">10</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">22.22</td>
+</tr><tr style="height: 30px;"><td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">6</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">13.33</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">6</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">13.33</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">12</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">26.67</td>
+</tr><tr style="height: 30px;"><td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">7</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">15.55</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">7</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">15.55</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">14</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">31.11</td>
+</tr><tr style="height: 30px;"><td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">8</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">17.78</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">8</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">17.78</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">16</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">35.55</td>
+</tr><tr style="height: 30px;"><td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">9</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">20</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">9</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">20</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">18</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">40</td>
+</tr><tr style="height: 30px;"><td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">10</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">22.22</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">10</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">22.22</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">20</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">44.44</td>
+</tr><tr style="height: 29.8px;"><td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">11</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">24.44</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">11</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">24.44</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">22</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(221, 221, 221); border-color: rgb(0, 0, 0);">48.89</td>
+</tr><tr style="height: 30px;"><td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);" rowspan="7" scope="rowgroup">HBL-1100</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">12</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">26.67</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">12</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">26.67</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">24</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">53.33</td>
+</tr><tr style="height: 30px;"><td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">13</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">28.89</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">13</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">28.89</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">26</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">57.78</td>
+</tr><tr style="height: 30px;"><td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">14</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">31.11</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">14</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">31.11</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">28</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">62.22</td>
+</tr><tr style="height: 30px;"><td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">15</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">33.33</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">15</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">33.33</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">30</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">66.67</td>
+</tr><tr style="height: 30px;"><td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">16</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">35.55</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">16</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">35.55</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">32</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">71.11</td>
+</tr><tr style="height: 30px;"><td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">17</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">37.78</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">17</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">37.78</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">34</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">75.56</td>
+</tr><tr style="height: 10px;"><td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">18</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">40</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">18</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">40</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">36</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(204, 204, 204); border-color: rgb(0, 0, 0);">80</td>
+</tr><tr style="height: 29.8px;"><td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(187, 187, 187); border-color: rgb(0, 0, 0);" scope="rowgroup">SmartDNS</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(187, 187, 187); border-color: rgb(0, 0, 0);">&gt; 18</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(187, 187, 187); border-color: rgb(0, 0, 0);">&gt; 40</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(187, 187, 187); border-color: rgb(0, 0, 0);">&gt; 18</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(187, 187, 187); border-color: rgb(0, 0, 0);">&gt; 40</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(187, 187, 187); border-color: rgb(0, 0, 0);">&gt; 36</td>
+<td class="align-center" style="height: 15px; vertical-align: middle; border-width: 1px; background-color: rgb(187, 187, 187); border-color: rgb(0, 0, 0);">&gt; 80</td>
+</tr></tbody></table>
             ]]>
         </content>
     </entry>
