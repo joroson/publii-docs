@@ -1,0 +1,27 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Docs",
+    "description": "",
+    "home_page_url": "https://joroson.github.io/publii-docs",
+    "feed_url": "https://joroson.github.io/publii-docs/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Joe Robinson"
+    },
+    "items": [
+        {
+            "id": "https://joroson.github.io/publii-docs/obligatory-first-post.html",
+            "url": "https://joroson.github.io/publii-docs/obligatory-first-post.html",
+            "title": "Obligatory first post",
+            "summary": "You always need one, right?",
+            "content_html": "<p>You always need one, right?</p>\n",
+            "author": {
+                "name": "Joe Robinson"
+            },
+            "tags": [
+            ],
+            "date_published": "2023-04-09T22:20:57+01:00",
+            "date_modified": "2023-04-09T22:20:57+01:00"
+        }
+    ]
+}
