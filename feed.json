@@ -11,6 +11,22 @@
     },
     "items": [
         {
+            "id": "https://docs.loadbalancer.pro/faqs/",
+            "url": "https://docs.loadbalancer.pro/faqs/",
+            "title": "FAQs",
+            "summary": "Can the customer use their own server hardware for a HyperBalance install? The customer should only be using their own server hardware for a HyperBalance&hellip;",
+            "content_html": "<blockquote>\n<p>Can the customer use their own server hardware for a HyperBalance install?</p>\n</blockquote>\n<p>The customer should only be using their own server hardware for a HyperBalance when that is the only possible way of proceeding with a HyperBalance sale. The server hardware <em><strong>must meet or exceed</strong></em> the minimum hardware specification provided. <em>Cloudian Professional Services will complete the installation on the server.</em></p>\n",
+            "author": {
+                "name": "Joe Robinson"
+            },
+            "tags": [
+                   "Partners",
+                   "Cloudian"
+            ],
+            "date_published": "2023-04-09T23:23:49+01:00",
+            "date_modified": "2023-04-09T23:24:04+01:00"
+        },
+        {
             "id": "https://docs.loadbalancer.pro/features/",
             "url": "https://docs.loadbalancer.pro/features/",
             "title": "Features",
@@ -20,9 +36,11 @@
                 "name": "Joe Robinson"
             },
             "tags": [
+                   "Partners",
+                   "Cloudian"
             ],
             "date_published": "2023-04-09T23:17:04+01:00",
-            "date_modified": "2023-04-09T23:17:04+01:00"
+            "date_modified": "2023-04-09T23:17:43+01:00"
         },
         {
             "id": "https://docs.loadbalancer.pro/hardware-specifications/",
@@ -34,9 +52,11 @@
                 "name": "Joe Robinson"
             },
             "tags": [
+                   "Partners",
+                   "Cloudian"
             ],
             "date_published": "2023-04-09T23:16:26+01:00",
-            "date_modified": "2023-04-09T23:16:26+01:00"
+            "date_modified": "2023-04-09T23:17:35+01:00"
         },
         {
             "id": "https://docs.loadbalancer.pro/obligatory-first-post/",

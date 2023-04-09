@@ -3,12 +3,38 @@
     <title>Docs</title>
     <link href="https://docs.loadbalancer.pro/feed.xml" rel="self" />
     <link href="https://docs.loadbalancer.pro" />
-    <updated>2023-04-09T23:17:04+01:00</updated>
+    <updated>2023-04-09T23:24:04+01:00</updated>
     <author>
         <name>Joe Robinson</name>
     </author>
     <id>https://docs.loadbalancer.pro</id>
 
+    <entry>
+        <title>FAQs</title>
+        <author>
+            <name>Joe Robinson</name>
+        </author>
+        <link href="https://docs.loadbalancer.pro/faqs/"/>
+        <id>https://docs.loadbalancer.pro/faqs/</id>
+            <category term="Partners"/>
+            <category term="Cloudian"/>
+
+        <updated>2023-04-09T23:24:04+01:00</updated>
+            <summary>
+                <![CDATA[
+                    Can the customer use their own server hardware for a HyperBalance install? The customer should only be using their own server hardware for a HyperBalance&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <blockquote>
+<p>Can the customer use their own server hardware for a HyperBalance install?</p>
+</blockquote>
+<p>The customer should only be using their own server hardware for a HyperBalance when that is the only possible way of proceeding with a HyperBalance sale. The server hardware <em><strong>must meet or exceed</strong></em> the minimum hardware specification provided. <em>Cloudian Professional Services will complete the installation on the server.</em></p>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Features</title>
         <author>
@@ -16,8 +42,10 @@
         </author>
         <link href="https://docs.loadbalancer.pro/features/"/>
         <id>https://docs.loadbalancer.pro/features/</id>
+            <category term="Partners"/>
+            <category term="Cloudian"/>
 
-        <updated>2023-04-09T23:17:04+01:00</updated>
+        <updated>2023-04-09T23:17:43+01:00</updated>
             <summary>
                 <![CDATA[
                     Currently Supported Layer 7 TCP &amp; HTTP Load Balancing Load balancing is the primary function of HyperBalance. As such, a wide range of Layer 7&hellip;
@@ -54,8 +82,10 @@
         </author>
         <link href="https://docs.loadbalancer.pro/hardware-specifications/"/>
         <id>https://docs.loadbalancer.pro/hardware-specifications/</id>
+            <category term="Partners"/>
+            <category term="Cloudian"/>
 
-        <updated>2023-04-09T23:16:26+01:00</updated>
+        <updated>2023-04-09T23:17:35+01:00</updated>
             <summary>
                 <![CDATA[
                     Where possible, you should always use Cloudian HyperBalance hardware or validated hardware. In some cases, this is not possible due to import/export legislation, corporate governance,&hellip;
