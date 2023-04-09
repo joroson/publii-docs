@@ -10,8 +10,8 @@
     },
     "items": [
         {
-            "id": "https://docs.loadbalancer.pro/obligatory-first-post.html",
-            "url": "https://docs.loadbalancer.pro/obligatory-first-post.html",
+            "id": "https://docs.loadbalancer.pro/obligatory-first-post/",
+            "url": "https://docs.loadbalancer.pro/obligatory-first-post/",
             "title": "Obligatory first post",
             "summary": "You always need one, right?",
             "content_html": "<p>You always need one, right?</p>\n",
