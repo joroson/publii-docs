@@ -3,7 +3,7 @@
     <title>Docs</title>
     <link href="https://docs.loadbalancer.pro/feed.xml" rel="self" />
     <link href="https://docs.loadbalancer.pro" />
-    <updated>2023-04-09T23:06:40+01:00</updated>
+    <updated>2023-04-09T23:14:56+01:00</updated>
     <author>
         <name>Joe Robinson</name>
     </author>
@@ -19,10 +19,10 @@
             <category term="Partners"/>
             <category term="Cloudian"/>
 
-        <updated>2023-04-09T23:06:40+01:00</updated>
+        <updated>2023-04-09T23:14:56+01:00</updated>
             <summary>
                 <![CDATA[
-                    At a glance HyperBalance Models Model HBL-VM** HBL-1050 HBL-1100 Throughput 8 Gbps 40 Gbps 70 Gbps HBL-VM**: Suitable for proof-of-concept systems only. Load balancers are&hellip;
+                    At a glance HyperBalance Models Model HBL-VM** HBL-1050 HBL-1100[^1] Throughput 8 Gbps 40 Gbps 70 Gbps [^1]: Suitable for proof-of-concept systems only. HBL-VM**: Suitable for&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -35,7 +35,7 @@
 <th align="center">Model</th>
 <th align="center"><em><strong>HBL-VM</strong></em><sup>**</sup></th>
 <th align="center">HBL-1050</th>
-<th align="center">HBL-1100</th>
+<th align="center">HBL-1100[^1]</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -45,6 +45,7 @@
 <td align="center">70 Gbps</td>
 </tr>
 </tbody></table>
+<p>[^1]: Suitable for proof-of-concept systems only.</p>
 <blockquote>
 <p><em><strong>HBL-VM</strong></em><sup>**</sup>: Suitable for proof-of-concept systems only.</p>
 </blockquote>
