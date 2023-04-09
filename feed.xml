@@ -3,14 +3,114 @@
     <title>Docs</title>
     <link href="https://docs.loadbalancer.pro/feed.xml" rel="self" />
     <link href="https://docs.loadbalancer.pro" />
-    <updated>2023-04-09T23:14:56+01:00</updated>
+    <updated>2023-04-09T23:17:04+01:00</updated>
     <author>
         <name>Joe Robinson</name>
     </author>
     <id>https://docs.loadbalancer.pro</id>
 
     <entry>
-        <title>Obligatory first post</title>
+        <title>Features</title>
+        <author>
+            <name>Joe Robinson</name>
+        </author>
+        <link href="https://docs.loadbalancer.pro/features/"/>
+        <id>https://docs.loadbalancer.pro/features/</id>
+
+        <updated>2023-04-09T23:17:04+01:00</updated>
+            <summary>
+                <![CDATA[
+                    Currently Supported Layer 7 TCP &amp; HTTP Load Balancing Load balancing is the primary function of HyperBalance. As such, a wide range of Layer 7&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h3 id="bkmrk-currently-supported">Currently Supported</h3>
+<h4 id="bkmrk-layer-7-tcp-%26-http-l">Layer 7 TCP &amp; HTTP Load Balancing</h4>
+<p id="bkmrk-load-balancing-is-th">Load balancing is the primary function of HyperBalance. As such, a wide range of Layer 7 TCP and HTTP load balancing options are available for use. Configuration guides are available for generic installations. When custom configurations are required these can be achieved where requirements are within the capabilities of HyperBalance.</p>
+<h4 id="bkmrk-global-server-load-b">Global Server Load Balancing (GSLB)</h4>
+<p id="bkmrk-gslb-is-fully-suppor">GSLB is fully supported and functional at this time, it is bundled with the OEM version of HyperBalance and can be used by HyperBalance customers. GSLB allows users to failover to an entirely different HyperStore cluster if their preferred/configured cluster is unavailable or unreachable. GSLB can be configured in the following distribution methodologies:</p>
+<ul id="bkmrk-fogroup%3A-failover-gr">
+<li class="null">fogroup: Failover group - Always prefer one HyperStore Cluster and failover to another Cluster if the preferred Cluster is offline.</li>
+<li class="null">wrr: Weighted Round Robin - Distribute requests evenly between the configured Clusters.</li>
+<li class="null">twrr: Topology Weighted Round Robin - Distribute requests based on where the requests are coming in from. For example, you can configure the GSLB to always send users to their closest HyperStore Cluster based on the IP address that they are trying to connect from.</li>
+</ul>
+<h4 id="bkmrk-smartdns">SmartDNS</h4>
+<p id="bkmrk-smartdns-%28alternativ">SmartDNS (alternatively referred to as GSLB direct-to-node) leverages the functionality of the GSLB to perform health checks against HyperStore nodes. Nodes that pass health checks are included in the rotation of servers that are available to service requests made to the HyperStore cluster. SmartDNS is useful for smoothing out utilization in Clusters with high node counts.</p>
+<h3 id="bkmrk-roadmap-features">Roadmap features</h3>
+<h4 id="bkmrk-layer-4-tcp-load-bal">Layer 4 TCP Load Balancing</h4>
+<p id="bkmrk-the-possibility-to-l">The possibility to load balance at Layer 4 is planned to be added to the product stack. In scenarios where layer 4 load balancing can be used, there will be the ability to configure direct routing mode. Direct routing allows for much higher throughput in read-intensive workloads.</p>
+<h4 id="bkmrk-global-server-load-b-0">Global Server Load Balancing with EDNS Client Subnet</h4>
+<p id="bkmrk-gslb-with-edns-clien">GSLB with EDNS Client Subnet (EDNS-CS) will extend the functionality of the GSLB. Currently, topology-weighted round-robin requires a DNS server at each data centre to work correctly. EDNS-CS adds the originating client subnet to the request and does not require a DNS server at each data centre. This greatly improves the granularity of the topology tables.</p>
+<h4 id="bkmrk-gslb-and-smartdns-dy">GSLB and SmartDNS dynamic weighting</h4>
+<p id="bkmrk-the-ability-to-dynam">The ability to dynamically change the weight given to nodes within a HyperStore cluster. This feature will further smooth cluster utilization allowing the system to send more requests to under-utilized nodes and fewer requests to over-utilized ones. Values can be calculated and customized based on metrics exposed through health checks performed against the nodes.</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Hardware Specifications</title>
+        <author>
+            <name>Joe Robinson</name>
+        </author>
+        <link href="https://docs.loadbalancer.pro/hardware-specifications/"/>
+        <id>https://docs.loadbalancer.pro/hardware-specifications/</id>
+
+        <updated>2023-04-09T23:16:26+01:00</updated>
+            <summary>
+                <![CDATA[
+                    Where possible, you should always use Cloudian HyperBalance hardware or validated hardware. In some cases, this is not possible due to import/export legislation, corporate governance,&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Where possible, you should always use Cloudian HyperBalance hardware or validated hardware. In some cases, this is not possible due to import/export legislation, corporate governance, etc. When this is not possible and an installation needs to be delivered on third-party hardware, it needs to meet these specifications.</p>
+<h5 id="minimum-specifications"><strong>Minimum</strong> specifications</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Item&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th align="left">HBL-1050</th>
+<th align="left">HBL-1100</th>
+<th align="left">Notes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">CPU</td>
+<td align="left">6C 12T @ 2.5GHz</td>
+<td align="left">24C 48T @ 2.5GHz</td>
+<td align="left"><strong>Intel CPUs with a minimum generation needs to be added.</strong></td>
+</tr>
+<tr>
+<td align="left">RAM</td>
+<td align="left">16GB @ 3200MT/s</td>
+<td align="left">32GB @ 3200MT/s</td>
+<td align="left">Where possible all memory channels should be populated. <strong>This needs clarification.</strong></td>
+</tr>
+<tr>
+<td align="left">Storage</td>
+<td align="left">&gt;250GB</td>
+<td align="left">&gt;250GB</td>
+<td align="left">OS requirement is 20GB. No RAID, neither hardware or software RAID is supported. NVMe/SSD/HDD supported.</td>
+</tr>
+<tr>
+<td align="left">Network</td>
+<td align="left">2 x 25GbE</td>
+<td align="left">1 x 100GbE</td>
+<td align="left"><em>Supported adapters:</em><br><strong>Mellanox</strong>: MCX512A-ACAT, MCX516A-GCAT, MCX516A-CCAT, MCX516A-CDAT<br>Other vendors are not currently supported.</td>
+</tr>
+<tr>
+<td align="left">PCIe</td>
+<td align="left">Gen 3.0 x16</td>
+<td align="left">Gen 4.0 x16</td>
+<td align="left">Minimum requirements to satisfy bus speeds.</td>
+</tr>
+</tbody></table>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Sizing Guide</title>
         <author>
             <name>Joe Robinson</name>
         </author>
@@ -19,7 +119,7 @@
             <category term="Partners"/>
             <category term="Cloudian"/>
 
-        <updated>2023-04-09T23:14:56+01:00</updated>
+        <updated>2023-04-09T23:15:57+01:00</updated>
             <summary>
                 <![CDATA[
                     At a glance HyperBalance Models Model HBL-VM** HBL-1050 HBL-1100[^1] Throughput 8 Gbps 40 Gbps 70 Gbps [^1]: Suitable for proof-of-concept systems only. HBL-VM**: Suitable for&hellip;
