@@ -2,16 +2,16 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "Docs",
     "description": "",
-    "home_page_url": "https://joroson.github.io/publii-docs",
-    "feed_url": "https://joroson.github.io/publii-docs/feed.json",
+    "home_page_url": "https://docs.loadbalancer.pro",
+    "feed_url": "https://docs.loadbalancer.pro/feed.json",
     "user_comment": "",
     "author": {
         "name": "Joe Robinson"
     },
     "items": [
         {
-            "id": "https://joroson.github.io/publii-docs/obligatory-first-post.html",
-            "url": "https://joroson.github.io/publii-docs/obligatory-first-post.html",
+            "id": "https://docs.loadbalancer.pro/obligatory-first-post.html",
+            "url": "https://docs.loadbalancer.pro/obligatory-first-post.html",
             "title": "Obligatory first post",
             "summary": "You always need one, right?",
             "content_html": "<p>You always need one, right?</p>\n",

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>Docs</title>
-    <link href="https://joroson.github.io/publii-docs/feed.xml" rel="self" />
-    <link href="https://joroson.github.io/publii-docs" />
+    <link href="https://docs.loadbalancer.pro/feed.xml" rel="self" />
+    <link href="https://docs.loadbalancer.pro" />
     <updated>2023-04-09T22:20:57+01:00</updated>
     <author>
         <name>Joe Robinson</name>
     </author>
-    <id>https://joroson.github.io/publii-docs</id>
+    <id>https://docs.loadbalancer.pro</id>
 
     <entry>
         <title>Obligatory first post</title>
         <author>
             <name>Joe Robinson</name>
         </author>
-        <link href="https://joroson.github.io/publii-docs/obligatory-first-post.html"/>
-        <id>https://joroson.github.io/publii-docs/obligatory-first-post.html</id>
+        <link href="https://docs.loadbalancer.pro/obligatory-first-post.html"/>
+        <id>https://docs.loadbalancer.pro/obligatory-first-post.html</id>
 
         <updated>2023-04-09T22:20:57+01:00</updated>
             <summary>
