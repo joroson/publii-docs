@@ -3,7 +3,7 @@
     <title>Info</title>
     <link href="https://info.rbnsn.uk/feed.xml" rel="self" />
     <link href="https://info.rbnsn.uk" />
-    <updated>2023-08-14T20:57:13+01:00</updated>
+    <updated>2023-08-14T21:02:00+01:00</updated>
     <author>
         <name>Joe Robinson</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://info.rbnsn.uk/test-post.html</id>
         <media:content url="https://info.rbnsn.uk/media/posts/1/available-ip-addresses-screenshot.jpg" medium="image" />
 
-        <updated>2023-08-14T20:57:13+01:00</updated>
+        <updated>2023-08-14T21:02:00+01:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://info.rbnsn.uk/media/posts/1/available-ip-addresses-screenshot.jpg" alt="" />
@@ -59,6 +59,12 @@
 <p>Shh! Knights, I bid you welcome to your new home. Let us ride to Camelot! How do you know she is a witch? Listen. Strange women lying in ponds distributing swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony.</p>
 <p>Oh, ow! The Lady of the Lake, her arm clad in the purest shimmering samite, held aloft Excalibur from the bosom of the water, signifying by divine providence that I, Arthur, was to carry Excalibur. That is why I am your king.</p>
 <p>Well, I got better. Why do you think that she is a witch? I dunno. Must be a king. What a strange person. How do you know she is a witch?</p>
+<h2 id="second-level">Second level</h2>
+<h3 id="third-level">Third level</h3>
+<h4 id="this-belongs-to-the-third-level">This belongs to the third level</h4>
+<h4 id="so-does-this-one">So does this one</h4>
+<h3 id="another-third-level-heading-is-it-all-added-to-the-table-of-contents">another third level heading. Is it all added to the table of contents?</h3>
+<h4 id="it-is-that-is-nice">It is, that is nice</h4>
 
             ]]>
         </content>
