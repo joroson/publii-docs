@@ -3,10 +3,34 @@
     <title>Info</title>
     <link href="https://info.rbnsn.uk/feed.xml" rel="self" />
     <link href="https://info.rbnsn.uk" />
-    <updated>1970-01-01T01:00:00+01:00</updated>
+    <updated>2023-08-14T20:52:29+01:00</updated>
     <author>
         <name>Joe Robinson</name>
     </author>
     <id>https://info.rbnsn.uk</id>
 
+    <entry>
+        <title>Test post</title>
+        <author>
+            <name>Joe Robinson</name>
+        </author>
+        <link href="https://info.rbnsn.uk/test-post.html"/>
+        <id>https://info.rbnsn.uk/test-post.html</id>
+        <media:content url="https://info.rbnsn.uk/media/posts/1/available-ip-addresses-screenshot.jpg" medium="image" />
+
+        <updated>2023-08-14T20:52:29+01:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://info.rbnsn.uk/media/posts/1/available-ip-addresses-screenshot.jpg" alt="" />
+                    Always got to have one.
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://info.rbnsn.uk/media/posts/1/available-ip-addresses-screenshot.jpg" class="type:primaryImage" alt="" /></p>
+                <p>Always got to have one.</p>
+
+            ]]>
+        </content>
+    </entry>
 </feed>
