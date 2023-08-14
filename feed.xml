@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>Docs</title>
-    <link href="https://docs.loadbalancer.pro/feed.xml" rel="self" />
-    <link href="https://docs.loadbalancer.pro" />
+    <link href="https://info.rbnsn.uk/feed.xml" rel="self" />
+    <link href="https://info.rbnsn.uk" />
     <updated>2023-04-09T23:24:04+01:00</updated>
     <author>
         <name>Joe Robinson</name>
     </author>
-    <id>https://docs.loadbalancer.pro</id>
+    <id>https://info.rbnsn.uk</id>
 
     <entry>
         <title>FAQs</title>
         <author>
             <name>Joe Robinson</name>
         </author>
-        <link href="https://docs.loadbalancer.pro/faqs/"/>
-        <id>https://docs.loadbalancer.pro/faqs/</id>
+        <link href="https://info.rbnsn.uk/faqs/"/>
+        <id>https://info.rbnsn.uk/faqs/</id>
             <category term="Partners"/>
             <category term="Cloudian"/>
 
@@ -40,8 +40,8 @@
         <author>
             <name>Joe Robinson</name>
         </author>
-        <link href="https://docs.loadbalancer.pro/features/"/>
-        <id>https://docs.loadbalancer.pro/features/</id>
+        <link href="https://info.rbnsn.uk/features/"/>
+        <id>https://info.rbnsn.uk/features/</id>
             <category term="Partners"/>
             <category term="Cloudian"/>
 
@@ -80,8 +80,8 @@
         <author>
             <name>Joe Robinson</name>
         </author>
-        <link href="https://docs.loadbalancer.pro/hardware-specifications/"/>
-        <id>https://docs.loadbalancer.pro/hardware-specifications/</id>
+        <link href="https://info.rbnsn.uk/hardware-specifications/"/>
+        <id>https://info.rbnsn.uk/hardware-specifications/</id>
             <category term="Partners"/>
             <category term="Cloudian"/>
 
@@ -144,8 +144,8 @@
         <author>
             <name>Joe Robinson</name>
         </author>
-        <link href="https://docs.loadbalancer.pro/obligatory-first-post/"/>
-        <id>https://docs.loadbalancer.pro/obligatory-first-post/</id>
+        <link href="https://info.rbnsn.uk/obligatory-first-post/"/>
+        <id>https://info.rbnsn.uk/obligatory-first-post/</id>
             <category term="Partners"/>
             <category term="Cloudian"/>
 

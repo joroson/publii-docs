@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="https://docs.loadbalancer.pro/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://info.rbnsn.uk/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url>
-<loc>https://docs.loadbalancer.pro/</loc>
+<loc>https://info.rbnsn.uk/</loc>
 </url>
 <url>
-<loc>https://docs.loadbalancer.pro/about/</loc>
+<loc>https://info.rbnsn.uk/about/</loc>
 <lastmod>2023-04-10T20:13:27+01:00</lastmod>
 <image:image>
-<image:loc>https://docs.loadbalancer.pro/media/posts/5/fiber-4814456_1920.jpg</image:loc>
+<image:loc>https://info.rbnsn.uk/media/posts/5/fiber-4814456_1920.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 </url>
 <url>
-<loc>https://docs.loadbalancer.pro/faqs/</loc>
+<loc>https://info.rbnsn.uk/faqs/</loc>
 <lastmod>2023-04-09T23:24:04+01:00</lastmod>
 </url>
 <url>
-<loc>https://docs.loadbalancer.pro/features/</loc>
+<loc>https://info.rbnsn.uk/features/</loc>
 <lastmod>2023-04-09T23:17:43+01:00</lastmod>
 </url>
 <url>
-<loc>https://docs.loadbalancer.pro/hardware-specifications/</loc>
+<loc>https://info.rbnsn.uk/hardware-specifications/</loc>
 <lastmod>2023-04-09T23:17:35+01:00</lastmod>
 </url>
 <url>
-<loc>https://docs.loadbalancer.pro/obligatory-first-post/</loc>
+<loc>https://info.rbnsn.uk/obligatory-first-post/</loc>
 <lastmod>2023-04-09T23:15:57+01:00</lastmod>
 </url>
 </urlset>
