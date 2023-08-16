@@ -3,7 +3,7 @@
     <title>Info</title>
     <link href="https://info.rbnsn.uk/feed.xml" rel="self" />
     <link href="https://info.rbnsn.uk" />
-    <updated>2023-08-14T22:24:30+01:00</updated>
+    <updated>2023-08-15T21:09:05+01:00</updated>
     <author>
         <name>Joe Robinson</name>
     </author>
@@ -20,11 +20,11 @@
             <category term="Mac"/>
             <category term="Linux"/>
 
-        <updated>2023-08-14T22:24:30+01:00</updated>
+        <updated>2023-08-15T21:09:05+01:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://info.rbnsn.uk/media/posts/3/available-ip-addresses-screenshot-2.jpg" alt="" />
-                    The scenario You want to add a new server/VM/container to your network and you want to statically assign the address. But, you don’t keep records&hellip;
+                    The scenario You want to add a new server/VM/container to your network and you want to statically assign the address. But, you don’t keep records of what is where and which IP addresses are assigned. I have been just copying and pasting in a bash&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -95,8 +95,8 @@ chmod +x ping_range.sh
     What it looks like
   </p>
 
-    <figure class="post__image post__image--full">
-      <img decoding="async" loading="lazy" src="https://info.rbnsn.uk/media/posts/3/SCR-20230731-nfrv-2.png" height="427" width="776" alt=""  sizes="(max-width: 768px) 100vw, 768px" srcset="https://info.rbnsn.uk/media/posts/3/responsive/SCR-20230731-nfrv-2-xs.png 300w ,https://info.rbnsn.uk/media/posts/3/responsive/SCR-20230731-nfrv-2-sm.png 480w ,https://info.rbnsn.uk/media/posts/3/responsive/SCR-20230731-nfrv-2-md.png 768w">
+    <figure class="post__image post__image--wide">
+      <img decoding="async" loading="lazy" src="https://info.rbnsn.uk/media/posts/3/SCR-20230731-nfrv-2.png" height="427" width="776" alt=""  sizes="100vw" srcset="https://info.rbnsn.uk/media/posts/3/responsive/SCR-20230731-nfrv-2-xs.png 300w ,https://info.rbnsn.uk/media/posts/3/responsive/SCR-20230731-nfrv-2-sm.png 480w ,https://info.rbnsn.uk/media/posts/3/responsive/SCR-20230731-nfrv-2-md.png 768w ,https://info.rbnsn.uk/media/posts/3/responsive/SCR-20230731-nfrv-2-lg.png 1024w ,https://info.rbnsn.uk/media/posts/3/responsive/SCR-20230731-nfrv-2-xl.png 1360w ,https://info.rbnsn.uk/media/posts/3/responsive/SCR-20230731-nfrv-2-2xl.png 1600w">
       
     </figure>
 
@@ -128,7 +128,7 @@ chmod +x ping_range.sh
             <![CDATA[
                 
     <figure class="post__image post__image--full">
-      <img decoding="async" loading="lazy" src="https://info.rbnsn.uk/media/posts/2/lagoon-nebula-11143-1.jpg" height="200" width="1200" alt=""  sizes="(max-width: 768px) 100vw, 768px" srcset="https://info.rbnsn.uk/media/posts/2/responsive/lagoon-nebula-11143-1-xs.jpg 300w ,https://info.rbnsn.uk/media/posts/2/responsive/lagoon-nebula-11143-1-sm.jpg 480w ,https://info.rbnsn.uk/media/posts/2/responsive/lagoon-nebula-11143-1-md.jpg 768w">
+      <img decoding="async" loading="lazy" src="https://info.rbnsn.uk/media/posts/2/lagoon-nebula-11143-1.jpg" height="200" width="1200" alt=""  sizes="100vw" srcset="https://info.rbnsn.uk/media/posts/2/responsive/lagoon-nebula-11143-1-xs.jpg 300w ,https://info.rbnsn.uk/media/posts/2/responsive/lagoon-nebula-11143-1-sm.jpg 480w ,https://info.rbnsn.uk/media/posts/2/responsive/lagoon-nebula-11143-1-md.jpg 768w ,https://info.rbnsn.uk/media/posts/2/responsive/lagoon-nebula-11143-1-lg.jpg 1024w ,https://info.rbnsn.uk/media/posts/2/responsive/lagoon-nebula-11143-1-xl.jpg 1360w ,https://info.rbnsn.uk/media/posts/2/responsive/lagoon-nebula-11143-1-2xl.jpg 1600w">
       
     </figure>
 
@@ -155,11 +155,11 @@ chmod +x ping_range.sh
         <id>https://info.rbnsn.uk/test-post.html</id>
         <media:content url="https://info.rbnsn.uk/media/posts/1/available-ip-addresses-screenshot.jpg" medium="image" />
 
-        <updated>2023-08-14T21:11:55+01:00</updated>
+        <updated>2023-08-15T19:53:44+01:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://info.rbnsn.uk/media/posts/1/available-ip-addresses-screenshot.jpg" alt="" />
-                    As always, it is fillerama content Who’s that then? I am your king. Shut up! Will you shut up?! Why? The swallow may fly south&hellip;
+                    As always, it is fillerama content Who’s that then? I am your king. Shut up! Will you shut up?! Why? The swallow may fly south with the sun, and the house martin or the plover may seek warmer climes in winter, yet these are not&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -200,8 +200,10 @@ chmod +x ping_range.sh
 <h3 id="third-level">Third level</h3>
 <h4 id="this-belongs-to-the-third-level">This belongs to the third level</h4>
 <h4 id="so-does-this-one">So does this one</h4>
-<h3 id="another-third-level-heading-is-it-all-added-to-the-table-of-contents">another third level heading. Is it all added to the table of contents?</h3>
+<h3 id="another-third-level-heading">another third level heading.</h3>
+<p>Is it all added to the table of contents?</p>
 <h4 id="it-is-that-is-nice">It is, that is nice</h4>
+<p>And now for something completely different.</p>
 <pre><code class="language-python">import os
 
 def which_os(self)
